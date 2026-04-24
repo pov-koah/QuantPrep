@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuantPrep — SAT & ACT Math Question Banks</title>
+<meta name="description" content="Targeted SAT and ACT math question banks. Buy individual packets or bundle for up to 31% off. Instant PDF download. No subscription.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="QuantPrep — SAT & ACT Math Question Banks">
+<meta property="og:description" content="Practice math question banks for SAT & ACT. Topic packs, difficulty levels, and bundle deals. Instant download.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="QuantPrep — SAT & ACT Math Question Banks">
+<meta name="twitter:description" content="Targeted SAT & ACT math practice. Buy packets individually or bundle for up to 31% off.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #080c18;
+  --navy-mid: #0f1525;
+  --navy-light: #172035;
+  --navy-card: #1a2540;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-pale: #f5e6c0;
+  --cream: #f0ece0;
+  --text: #ddd8c8;
+  --muted: #7a7a6a;
+  --border: rgba(201,168,76,0.18);
+  --border-soft: rgba(255,255,255,0.06);
+  --green: #3dba7e;
+  --red: #e05c5c;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--navy);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ─── NAV ─── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  padding: 18px 56px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(8,12,24,0.9);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px; font-weight: 700;
+  color: var(--gold-light); letter-spacing: 0.02em;
+}
+.logo span { color: var(--text); font-weight: 400; }
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a {
+  font-size: 12px; font-weight: 400; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted);
+  text-decoration: none; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold-light); }
+.nav-cta {
+  background: var(--gold) !important; color: var(--navy) !important;
+  padding: 9px 22px; border-radius: 2px; font-weight: 500 !important;
+}
+.nav-cta:hover { background: var(--gold-light) !important; }
+
+/* ─── HERO ─── */
+.hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 130px 40px 80px;
+  position: relative; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 55% at 50% 25%, rgba(201,168,76,0.09) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 15% 75%, rgba(26,37,64,0.6) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 85% 75%, rgba(26,37,64,0.6) 0%, transparent 55%);
+}
+.hero-dots {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(rgba(201,168,76,0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.hero-content { position: relative; z-index: 2; max-width: 780px; }
+.eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 24px;
+  opacity: 0; animation: fadeUp 0.7s 0.1s forwards;
+}
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(50px, 9vw, 92px); font-weight: 600; line-height: 1.0;
+  color: var(--cream); margin-bottom: 24px;
+  opacity: 0; animation: fadeUp 0.7s 0.25s forwards;
+}
+.hero h1 em { color: var(--gold-light); font-style: italic; }
+.hero-sub {
+  font-size: 17px; color: var(--muted); line-height: 1.75;
+  max-width: 500px; margin: 0 auto 44px;
+  opacity: 0; animation: fadeUp 0.7s 0.4s forwards;
+}
+.hero-sub strong { color: var(--text); font-weight: 400; }
+.hero-actions {
+  display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp 0.7s 0.55s forwards;
+}
+.btn-gold {
+  background: var(--gold); color: var(--navy);
+  padding: 15px 38px; border-radius: 2px;
+  font-size: 13px; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none;
+  transition: all 0.22s; display: inline-block; border: none; cursor: pointer;
+}
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); box-shadow: 0 8px 28px rgba(201,168,76,0.22); }
+.btn-outline {
+  border: 1px solid var(--border); color: var(--text);
+  padding: 15px 38px; border-radius: 2px;
+  font-size: 13px; font-weight: 400; letter-spacing: 0.08em;
+  text-transform: uppercase; text-decoration: none;
+  transition: all 0.22s; display: inline-block;
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold-light); }
+
+.trust-row {
+  display: flex; justify-content: center; gap: 48px; margin-top: 64px;
+  padding-top: 44px; border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+  opacity: 0; animation: fadeUp 0.7s 0.7s forwards;
+}
+.trust-item { text-align: center; }
+.trust-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px; font-weight: 600; color: var(--gold-light); line-height: 1;
+}
+.trust-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 5px; }
+
+/* ─── SECTION SHELL ─── */
+section { padding: 96px 56px; }
+.inner { max-width: 1100px; margin: 0 auto; }
+.sec-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 14px;
+  display: flex; align-items: center; gap: 12px;
+}
+.sec-label::after { content: ''; height: 1px; background: var(--border); width: 60px; }
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(30px, 4vw, 50px); font-weight: 600;
+  color: var(--cream); line-height: 1.08; margin-bottom: 14px;
+}
+h2 em { color: var(--gold-light); font-style: italic; }
+.subhead { font-size: 15px; color: var(--muted); max-width: 520px; line-height: 1.7; margin-bottom: 52px; }
+
+/* ─── HOW IT WORKS ─── */
+.how { background: var(--navy-mid); }
+.steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; margin-top: 48px; }
+.step {
+  background: var(--navy-card); padding: 32px 24px;
+  position: relative; border: 1px solid var(--border-soft);
+  transition: border-color 0.2s;
+}
+.step:hover { border-color: var(--border); }
+.step-n {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 64px; font-weight: 600; color: rgba(201,168,76,0.1); line-height: 1;
+  margin-bottom: 16px;
+}
+.step-title { font-size: 15px; color: var(--cream); margin-bottom: 8px; }
+.step-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+/* ─── STORE ─── */
+.store { background: var(--navy); }
+
+/* tabs */
+.tab-bar {
+  display: flex; gap: 4px; margin-bottom: 40px;
+  background: var(--navy-mid); padding: 6px;
+  border-radius: 4px; width: fit-content;
+  border: 1px solid var(--border-soft);
+}
+.tab {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 9px 22px; border-radius: 3px; cursor: pointer;
+  color: var(--muted); background: none; border: none;
+  transition: all 0.18s;
+}
+.tab.active { background: var(--navy-card); color: var(--gold-light); border: 1px solid var(--border); }
+
+/* packet grid */
+.packet-grid { display: none; }
+.packet-grid.active { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 16px; }
+
+.packet-card {
+  background: var(--navy-card); border: 1px solid var(--border-soft);
+  border-radius: 4px; padding: 24px 20px;
+  display: flex; flex-direction: column;
+  transition: all 0.22s; position: relative; overflow: hidden;
+}
+.packet-card:hover { border-color: var(--border); transform: translateY(-2px); }
+.packet-card::after {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  opacity: 0; transition: opacity 0.22s;
+}
+.packet-card:hover::after { opacity: 1; }
+.packet-tag {
+  font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
+}
+.packet-name { font-size: 15px; color: var(--cream); margin-bottom: 6px; font-weight: 400; }
+.packet-desc { font-size: 13px; color: var(--muted); line-height: 1.55; flex: 1; margin-bottom: 20px; }
+.packet-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+.packet-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px; font-weight: 600; color: var(--cream);
+}
+.packet-price sup { font-size: 14px; vertical-align: super; }
+.btn-add {
+  font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 8px 14px; border-radius: 2px;
+  background: rgba(201,168,76,0.12); color: var(--gold);
+  border: 1px solid var(--border); cursor: pointer; transition: all 0.18s;
+}
+.btn-add:hover { background: var(--gold); color: var(--navy); }
+.packet-count { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); margin-top: 12px; }
+
+/* ─── BUNDLES ─── */
+.bundles { background: var(--navy-mid); }
+.bundle-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.bundle-card {
+  background: var(--navy-card); border: 1px solid var(--border-soft);
+  border-radius: 4px; padding: 32px 28px; position: relative;
+  display: flex; flex-direction: column; transition: all 0.22s;
+}
+.bundle-card:hover { border-color: var(--border); transform: translateY(-2px); }
+.bundle-card.hero-bundle {
+  background: linear-gradient(150deg, #1e2f52, #162038);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px rgba(201,168,76,0.12), 0 24px 60px rgba(0,0,0,0.4);
+}
+.best-badge {
+  position: absolute; top: -1px; right: 28px;
+  background: var(--gold); color: var(--navy);
+  font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.14em;
+  text-transform: uppercase; padding: 5px 14px; border-radius: 0 0 4px 4px;
+  font-weight: 500;
+}
+.bundle-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; color: var(--cream); margin-bottom: 4px;
+}
+.bundle-contents { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 24px; flex: 1; }
+.bundle-contents li { list-style: none; padding: 5px 0; border-bottom: 1px solid var(--border-soft); display: flex; gap: 8px; }
+.bundle-contents li::before { content: '—'; color: var(--gold); font-size: 11px; }
+.bundle-pricing { margin-bottom: 24px; }
+.bundle-was { font-size: 13px; color: var(--muted); text-decoration: line-through; margin-bottom: 2px; }
+.bundle-now {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 50px; font-weight: 600; color: var(--cream); line-height: 1;
+}
+.bundle-now sup { font-size: 22px; vertical-align: super; }
+.bundle-save {
+  display: inline-block; margin-top: 6px;
+  font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--green);
+  background: rgba(61,186,126,0.1); padding: 3px 10px; border-radius: 2px;
+}
+
+/* ─── WHY MATH ─── */
+.why-math { background: var(--navy); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+.why-math-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-top: 52px;
+}
+.why-math-left { }
+.why-stat-stack { display: flex; flex-direction: column; gap: 28px; margin-top: 36px; }
+.why-stat {
+  display: flex; gap: 20px; align-items: flex-start;
+  padding: 20px 24px; background: var(--navy-card);
+  border: 1px solid var(--border-soft); border-radius: 4px;
+  transition: border-color 0.2s;
+}
+.why-stat:hover { border-color: var(--border); }
+.why-stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px; font-weight: 600; color: var(--gold-light);
+  line-height: 1; flex-shrink: 0; min-width: 80px;
+}
+.why-stat-text { padding-top: 4px; }
+.why-stat-title { font-size: 14px; color: var(--cream); margin-bottom: 4px; }
+.why-stat-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.why-math-right { }
+.why-pull {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(26px, 3vw, 38px); font-weight: 600;
+  color: var(--cream); line-height: 1.2; margin-bottom: 28px;
+  border-left: 2px solid var(--gold); padding-left: 24px;
+}
+.why-pull em { color: var(--gold-light); font-style: italic; }
+.why-body { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 20px; }
+.why-body strong { color: var(--text); font-weight: 400; }
+@media (max-width: 860px) {
+  .why-math-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* ─── FAQ ─── */
+.faq { background: var(--navy); }
+.faq-list { max-width: 680px; }
+.faq-item {
+  border-bottom: 1px solid var(--border-soft);
+  padding: 20px 0; cursor: pointer;
+}
+.faq-q {
+  font-size: 15px; color: var(--cream);
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq-q .icon { color: var(--gold); font-size: 18px; flex-shrink: 0; transition: transform 0.2s; }
+.faq-a { font-size: 14px; color: var(--muted); line-height: 1.7; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; }
+.faq-item.open .faq-a { max-height: 300px; padding-top: 12px; }
+.faq-item.open .icon { transform: rotate(45deg); }
+
+/* ─── PROMO BANNER ─── */
+.promo-banner {
+  background: linear-gradient(90deg, #12294a, #1a3a1a, #12294a);
+  border-top: 1px solid rgba(61,186,126,0.2);
+  border-bottom: 1px solid rgba(61,186,126,0.2);
+  padding: 16px 40px;
+  text-align: center;
+}
+.promo-text {
+  font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--green);
+}
+.promo-text strong { color: #fff; }
+
+/* ─── CTA SECTION ─── */
+.cta-wrap {
+  background: var(--navy-mid);
+  border-top: 1px solid var(--border);
+  text-align: center; padding: 100px 40px;
+}
+.cta-wrap h2 { margin-bottom: 14px; }
+.cta-wrap p { color: var(--muted); font-size: 16px; max-width: 460px; margin: 0 auto 40px; }
+.money-back {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 20px;
+  font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--muted);
+}
+.money-back::before { content: '✓'; color: var(--green); font-size: 12px; }
+
+/* ─── FOOTER ─── */
+footer {
+  background: #050810; padding: 36px 56px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid var(--border-soft); flex-wrap: wrap; gap: 16px;
+}
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--gold); font-weight: 600; }
+.footer-nav { display: flex; gap: 24px; }
+.footer-nav a { font-size: 12px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.footer-nav a:hover { color: var(--gold-light); }
+.footer-copy { font-size: 11px; color: #2a2a20; }
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 960px) {
+  nav { padding: 16px 24px; }
+  .nav-links { gap: 16px; }
+  section { padding: 72px 24px; }
+  .steps { grid-template-columns: 1fr 1fr; }
+  .bundle-grid { grid-template-columns: 1fr; }
+  footer { padding: 28px 24px; }
+}
+@media (max-width: 600px) {
+  .nav-links { display: none; }
+  .steps { grid-template-columns: 1fr; }
+  .trust-row { gap: 28px; }
+}
+</style>
+</head>
+<body>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+  <span class="promo-text">🎉 Bundle &amp; Save — <strong>Up to 31% off</strong> when you buy multiple packets · <strong>No subscription. Instant download.</strong></span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Quant<span>Prep</span></div>
+  <div class="nav-links">
+    <a href="#how">How It Works</a>
+    <a href="#store">Shop Packets</a>
+    <a href="#bundles">Bundles</a>
+    <a href="#faq">FAQ</a>
+    <a href="#bundles" class="nav-cta">Save with Bundles</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-content">
+    <p class="eyebrow">SAT &amp; ACT Math · Question Banks</p>
+    <h1>The Score You Want<br>Is <em>100 Questions Away</em></h1>
+    <p class="hero-sub">
+      Crafted SAT &amp; ACT math questions, organized by topic. <strong>Buy a packet, do the reps, see the score move.</strong> Bundle for serious savings.
+    </p>
+    <div class="hero-actions">
+      <a href="#store" class="btn-gold">Shop Individual Packets</a>
+      <a href="#bundles" class="btn-outline">See Bundle Deals</a>
+    </div>
+    <div class="trust-row">
+      <div class="trust-item"><div class="trust-num">100</div><div class="trust-label">Questions per Packet</div></div>
+      <div class="trust-item"><div class="trust-num">3</div><div class="trust-label">Packets per Test</div></div>
+      <div class="trust-item"><div class="trust-num">SAT &amp; ACT</div><div class="trust-label">Both Tests Covered</div></div>
+      <div class="trust-item"><div class="trust-num">31%</div><div class="trust-label">Max Bundle Savings</div></div>
+    </div>
+    <div style="margin-top:24px;opacity:0;animation:fadeUp 0.7s 0.85s forwards;">
+      <span style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);">✓ Trusted by Students Across the Country</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="inner">
+    <div class="sec-label">How It Works</div>
+    <h2>Simple by <em>Design</em></h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-n">01</div>
+        <div class="step-title">Pick a Packet</div>
+        <div class="step-desc">Choose your test — SAT or ACT — and pick a packet. Each packet is 100 focused questions covering the full range of math topics.</div>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <div class="step-title">Download Instantly</div>
+        <div class="step-desc">PDF delivered immediately after purchase. Print it or work on a tablet — no accounts, no logins, no expiry.</div>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <div class="step-title">Work Through It</div>
+        <div class="step-desc">Complete the questions, check answers with the included key, and review worked solutions for every wrong answer.</div>
+      </div>
+      <div class="step">
+        <div class="step-n">04</div>
+        <div class="step-title">Come Back for More</div>
+        <div class="step-desc">Finished a packet? Grab the next one, or bundle multiple packets to save up to 31%.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY MATH -->
+<section class="why-math">
+  <div class="inner">
+    <div class="sec-label">Why Math. Why Practice.</div>
+    <h2>The Most <em>Improvable</em> Section<br>on Either Test</h2>
+
+    <div class="why-math-grid">
+
+      <div class="why-math-left">
+        <div class="why-stat-stack">
+
+          <div class="why-stat">
+            <div class="why-stat-num">#1</div>
+            <div class="why-stat-text">
+              <div class="why-stat-title">Most Improvable Section</div>
+              <div class="why-stat-desc">Unlike reading — which builds over years — math tests a finite, learnable set of skills. That means every hour of focused practice has a direct, measurable return on your score.</div>
+            </div>
+          </div>
+
+          <div class="why-stat">
+            <div class="why-stat-num">100+</div>
+            <div class="why-stat-text">
+              <div class="why-stat-title">Points of Proven Upside</div>
+              <div class="why-stat-desc">Deliberate practice — working through problems, reviewing mistakes, repeating — is the single most proven driver of math score improvement. Not passive review. Not videos. Reps.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="why-math-right">
+        <div class="why-pull">
+          Math is the one section where <em>hard work has a guaranteed return.</em>
+        </div>
+        <p class="why-body">
+          Every tutor, every prep course, every score increase traces back to the same thing: <strong>sitting down and doing the problems.</strong> QuantPrep gives you the volume of fresh, targeted questions to make that practice count.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STORE -->
+<section class="store" id="store">
+  <div class="inner">
+    <div class="sec-label">Individual Packets</div>
+    <h2>Shop by <em>Test or Packet</em></h2>
+    <p class="subhead">Each packet is $19. Buy what you need, when you need it. Or bundle below to save.</p>
+
+    <div class="tab-bar">
+      <button class="tab active" onclick="switchTab('sat')">SAT Math</button>
+      <button class="tab" onclick="switchTab('act')">ACT Math</button>
+    </div>
+
+    <!-- SAT PACKETS -->
+    <div class="packet-grid active" id="tab-sat">
+
+      <div class="packet-card">
+        <div class="packet-tag">SAT Math · Packet 1</div>
+        <div class="packet-name">SAT Math Packet 1</div>
+        <div class="packet-desc">100 original questions across Algebra, Advanced Math, Problem Solving & Data, and Geometry. Includes full answer key and worked solutions.</div>
+        <div class="packet-count">100 Questions · Answer Key + Worked Solutions</div>
+        <div class="packet-footer">
+          <div class="packet-price"><sup>$</sup>19</div>
+          <button class="btn-add" onclick="window.location.href='#'">Add →</button>
+        </div>
+      </div>
+
+      <div class="packet-card">
+        <div class="packet-tag">SAT Math · Packet 2</div>
+        <div class="packet-name">SAT Math Packet 2</div>
+        <div class="packet-desc">100 original questions across Algebra, Advanced Math, Problem Solving & Data, and Geometry. Includes full answer key and worked solutions.</div>
+        <div class="packet-count">100 Questions · Answer Key + Worked Solutions</div>
+        <div class="packet-footer">
+          <div class="packet-price"><sup>$</sup>19</div>
+          <button class="btn-add" onclick="window.location.href='#'">Add →</button>
+        </div>
+      </div>
+
+      <div class="packet-card">
+        <div class="packet-tag">SAT Math · Packet 3</div>
+        <div class="packet-name">SAT Math Packet 3</div>
+        <div class="packet-desc">100 original questions across Algebra, Advanced Math, Problem Solving & Data, and Geometry. Includes full answer key and worked solutions.</div>
+        <div class="packet-count">100 Questions · Answer Key + Worked Solutions</div>
+        <div class="packet-footer">
+          <div class="packet-price"><sup>$</sup>19</div>
+          <button class="btn-add" onclick="window.location.href='#'">Add →</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ACT PACKETS -->
+    <div class="packet-grid" id="tab-act">
+
+      <div class="packet-card">
+        <div class="packet-tag">ACT Math · Packet 1</div>
+        <div class="packet-name">ACT Math Packet 1</div>
+        <div class="packet-desc">100 original questions across Algebra & Functions, Geometry, Statistics, and more. Includes full answer key and worked solutions.</div>
+        <div class="packet-count">100 Questions · Answer Key + Worked Solutions</div>
+        <div class="packet-footer">
+          <div class="packet-price"><sup>$</sup>19</div>
+          <button class="btn-add" onclick="window.location.href='#'">Add →</button>
+        </div>
+      </div>
+
+      <div class="packet-card">
+        <div class="packet-tag">ACT Math · Packet 2</div>
+        <div class="packet-name">ACT Math Packet 2</div>
+        <div class="packet-desc">100 original questions across Algebra & Functions, Geometry, Statistics, and more. Includes full answer key and worked solutions.</div>
+        <div class="packet-count">100 Questions · Answer Key + Worked Solutions</div>
+        <div class="packet-footer">
+          <div class="packet-price"><sup>$</sup>19</div>
+          <button class="btn-add" onclick="window.location.href='#'">Add →</button>
+        </div>
+      </div>
+
+      <div class="packet-card">
+        <div class="packet-tag">ACT Math · Packet 3</div>
+        <div class="packet-name">ACT Math Packet 3</div>
+        <div class="packet-desc">100 original questions across Algebra & Functions, Geometry, Statistics, and more. Includes full answer key and worked solutions.</div>
+        <div class="packet-count">100 Questions · Answer Key + Worked Solutions</div>
+        <div class="packet-footer">
+          <div class="packet-price"><sup>$</sup>19</div>
+          <button class="btn-add" onclick="window.location.href='#'">Add →</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BUNDLES -->
+<section class="bundles" id="bundles">
+  <div class="inner">
+    <div class="sec-label">Bundle Deals</div>
+    <h2>Buy More, <em>Save More</em></h2>
+    <p class="subhead">Commit to the score. Save up to 50% when you bundle packets together.</p>
+
+    <div class="bundle-grid">
+
+      <div class="bundle-card">
+        <div class="bundle-name">SAT Complete</div>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:16px;">All 3 SAT Math packets in one download.</p>
+        <ul class="bundle-contents">
+          <li>SAT Math Packet 1</li>
+          <li>SAT Math Packet 2</li>
+          <li>SAT Math Packet 3</li>
+          <li>300 Questions Total</li>
+          <li>Full Answer Keys & Worked Solutions</li>
+        </ul>
+        <div class="bundle-pricing">
+          <div class="bundle-was">Individually: $57</div>
+          <div class="bundle-now"><sup>$</sup>45</div>
+          <span class="bundle-save">Save $12 — 21% off</span>
+        </div>
+        <a href="#" class="btn-gold">Get SAT Complete</a>
+      </div>
+
+      <div class="bundle-card hero-bundle">
+        <div class="best-badge">Best Value</div>
+        <div class="bundle-name">Ultimate Bundle</div>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:16px;">All 6 packets — every SAT and ACT packet in one download.</p>
+        <ul class="bundle-contents">
+          <li>All 3 SAT Math Packets</li>
+          <li>All 3 ACT Math Packets</li>
+          <li>600 Questions Total</li>
+          <li>Full Answer Keys & Worked Solutions</li>
+        </ul>
+        <div class="bundle-pricing">
+          <div class="bundle-was">Individually: $114</div>
+          <div class="bundle-now"><sup>$</sup>79</div>
+          <span class="bundle-save">Save $35 — 31% off</span>
+        </div>
+        <a href="#" class="btn-gold">Get the Ultimate Bundle</a>
+      </div>
+
+      <div class="bundle-card">
+        <div class="bundle-name">ACT Complete</div>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:16px;">All 3 ACT Math packets in one download.</p>
+        <ul class="bundle-contents">
+          <li>ACT Math Packet 1</li>
+          <li>ACT Math Packet 2</li>
+          <li>ACT Math Packet 3</li>
+          <li>300 Questions Total</li>
+          <li>Full Answer Keys & Worked Solutions</li>
+        </ul>
+        <div class="bundle-pricing">
+          <div class="bundle-was">Individually: $57</div>
+          <div class="bundle-now"><sup>$</sup>45</div>
+          <span class="bundle-save">Save $12 — 21% off</span>
+        </div>
+        <a href="#" class="btn-gold">Get ACT Complete</a>
+      </div>
+
+    </div>
+
+    <!-- Paired bundles -->
+    <div style="margin-top:40px;">
+      <div class="sec-label" style="margin-bottom:20px;">Paired Bundles — SAT + ACT by Number</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;">
+
+        <div style="background:var(--navy-card);border:1px solid var(--border-soft);border-radius:4px;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+          <div>
+            <div style="font-size:14px;color:var(--cream);margin-bottom:3px;">SAT 1 + ACT 1</div>
+            <div style="font-size:12px;color:var(--muted);">200 questions across both tests</div>
+          </div>
+          <div style="text-align:right;flex-shrink:0;">
+            <div style="font-size:12px;color:var(--muted);text-decoration:line-through;">$38</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--cream);">$<b>29</b></div>
+            <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--green);">Save $9 — 24% off</div>
+          </div>
+        </div>
+
+        <div style="background:var(--navy-card);border:1px solid var(--border-soft);border-radius:4px;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+          <div>
+            <div style="font-size:14px;color:var(--cream);margin-bottom:3px;">SAT 2 + ACT 2</div>
+            <div style="font-size:12px;color:var(--muted);">200 questions across both tests</div>
+          </div>
+          <div style="text-align:right;flex-shrink:0;">
+            <div style="font-size:12px;color:var(--muted);text-decoration:line-through;">$38</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--cream);">$<b>29</b></div>
+            <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--green);">Save $9 — 24% off</div>
+          </div>
+        </div>
+
+        <div style="background:var(--navy-card);border:1px solid var(--border);border-radius:4px;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+          <div>
+            <div style="font-size:14px;color:var(--cream);margin-bottom:3px;">SAT 3 + ACT 3</div>
+            <div style="font-size:12px;color:var(--muted);">200 questions across both tests</div>
+          </div>
+          <div style="text-align:right;flex-shrink:0;">
+            <div style="font-size:12px;color:var(--muted);text-decoration:line-through;">$38</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold-light);">$<b>29</b></div>
+            <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--green);">Save $9 — 24% off</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="inner">
+    <div class="sec-label">FAQ</div>
+    <h2>Common <em>Questions</em></h2>
+    <div class="faq-list">
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">What format are the packets? <span class="icon">+</span></div>
+        <div class="faq-a">All packets are delivered as PDF files immediately after purchase. You can print them, use them on a tablet, or work through them digitally. No app, no login, no subscription — just the file.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Which packet should my student start with? <span class="icon">+</span></div>
+        <div class="faq-a">Start with Packet 1 for either SAT or ACT — or both if you're deciding between tests. Each packet covers the full topic range, so you'll get a clear read on where your gaps are before buying more.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Can I buy SAT and ACT packets in the same order? <span class="icon">+</span></div>
+        <div class="faq-a">Yes — the paired bundles (SAT 1 + ACT 1, etc.) let you mix across both tests at a discount. If you're undecided on which test to focus on, this is a great way to compare difficulty and style before committing.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Is there a money-back guarantee? <span class="icon">+</span></div>
+        <div class="faq-a">Yes. If you're not satisfied with your purchase for any reason, contact us within 30 days for a full refund — no questions asked.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">How are these different from free practice tests? <span class="icon">+</span></div>
+        <div class="faq-a">Official practice tests are valuable but limited — there are only a handful available, and students often exhaust them quickly. These packets provide fresh, targeted questions designed for deliberate practice rather than simulation, with full worked solutions so you understand every mistake.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">How many questions are in each packet? <span class="icon">+</span></div>
+        <div class="faq-a">Every packet contains 100 questions and includes a full answer key and worked solutions.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-wrap">
+  <div class="sec-label" style="justify-content:center;margin-bottom:16px;">Ready to Start</div>
+  <h2>Pick a Packet.<br><em>Start Today.</em></h2>
+  <p>No commitment. No subscription. Buy one packet, work through it, come back for more — or bundle from the start and save up to 31%.</p>
+  <a href="#store" class="btn-gold">Shop All Packets</a>
+  <div><span class="money-back">30-Day Money-Back Guarantee</span></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">QuantPrep</div>
+  <div class="footer-nav">
+    <a href="#store">Packets</a>
+    <a href="#bundles">Bundles</a>
+    <a href="#faq">FAQ</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 QuantPrep. All rights reserved.</div>
+</footer>
+
+<script>
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.packet-grid').forEach(g => g.classList.remove('active'));
+  document.querySelector(`[onclick="switchTab('${name}')"]`).classList.add('active');
+  document.getElementById(`tab-${name}`).classList.add('active');
+}
+function toggleFaq(el) {
+  const wasOpen = el.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+  if (!wasOpen) el.classList.add('open');
+}
+</script>
+</body>
+</html>
